@@ -1,7 +1,9 @@
 
 var cache = [];
 function tsp_hk(dist) {
-	let cities = [];
+	if (dist.length <= 1)
+	return 0    
+    let cities = [];
     let distance = 0;
 	let min = Infinity;
 	for (let i = 0; i < dist.length; i++)
