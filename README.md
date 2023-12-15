@@ -47,3 +47,16 @@ Test your new function; I've provided some basic testing code in `code.test.js`.
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+
+# Analysis
+The worst-case time complexity would be $n!$. In the case of a directed graph where the cache
+never has an opportunity to be used as every edge that’s checked is different than the last, meaning the
+algorithm will have to check every possible permutation and never use the data stored in the cache.
+
+The worst-case memory complexity would also be $n!$, because in the worst-case the last permutation
+checked would find the shortest route, and the n-1 route would be the second best, and so on, meaning
+that the cache would fill up with every permutation before finding the shortest route.
+
+
+
